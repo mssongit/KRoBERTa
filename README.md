@@ -1,3 +1,3 @@
-# KoRoBERTa
+# KrAlBert
 
-한국어 RoBERTa 모델 생성
+한국어 AlBert 모델 생성
