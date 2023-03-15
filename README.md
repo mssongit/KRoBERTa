@@ -1,8 +1,3 @@
-# KrAlBert
+KRRoBERTa
 
-한국어 AlBert 모델 생성
-
-
-말뭉치 텍스트
-- 모두의 말뭉치
-- 
+한국어 RoBERTa 모델 생성
