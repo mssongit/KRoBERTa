@@ -32,12 +32,7 @@ def is_rank_0() -> bool:
     return int(os.environ.get("RANK", "0")) == 0
 
 
-######################################################################
-####################### Logging Functions ############################
-######################################################################
-
 logger = loguru.logger
-
 
 def log_dist(message: str,
              ranks: List[int] = [],
@@ -53,12 +48,8 @@ def log_dist(message: str,
             logger.debug(f'[Rank {my_rank}] {message}')
 
 
-######################################################################
-############### Dataset Creation Related Functions ###################
-######################################################################
 
 TokenizerType = Union[PreTrainedTokenizer, PreTrainedTokenizerFast]
-
 
 def collate_function(batch: List[Tuple[List[int], List[int]]],
                      pad_token_id: int) -> Dict[str, torch.Tensor]:
