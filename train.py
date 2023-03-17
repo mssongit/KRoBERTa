@@ -31,9 +31,8 @@ from transformers.models.roberta.modeling_roberta import (
 def is_rank_0() -> bool:
     return int(os.environ.get("RANK", "0")) == 0
 
-
+# log define
 logger = loguru.logger
-
 def log_dist(message: str,
              ranks: List[int] = [],
              level: int = logging.INFO) -> None:
@@ -709,9 +708,8 @@ def train(
         tb_dir = exp_dir / "tb_dir"
         assert tb_dir.exists()
         summary_writer = SummaryWriter(log_dir=tb_dir)
-    ################################
-    ###### Create Datasets #########
-    ################################
+    
+    # Create dataset
     log_dist("Creating Datasets", ranks=[0], level=logging.INFO)
     data_iterator = create_data_iterator(
         mask_prob=mask_prob,
