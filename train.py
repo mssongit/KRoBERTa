@@ -268,11 +268,7 @@ def create_data_iterator(
     return InfiniteIterator(dataloader)
 
 
-######################################################################
-############### Model Creation Related Functions #####################
-######################################################################
-
-
+# Model Creation Related Functions
 class RobertaLMHeadWithMaskedPredict(RobertaLMHead):
     def __init__(self,
                  config: RobertaConfig,
