@@ -403,11 +403,7 @@ def create_model(num_layers: int, num_heads: int, ff_dim: int, h_dim: int,
     return roberta_model
 
 
-######################################################################
-########### Experiment Management Related Functions ##################
-######################################################################
-
-
+#Experiment Management Related Functions
 def get_unique_identifier(length: int = 8) -> str:
     """Create a unique identifier by choosing `length`
     random characters from list of ascii characters and numbers
