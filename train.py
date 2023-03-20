@@ -621,9 +621,8 @@ def train(
     """
     device = (torch.device("cuda", local_rank) if (local_rank > -1)
               and torch.cuda.is_available() else torch.device("cpu"))
-    ################################
-    ###### Create Exp. Dir #########
-    ################################
+    
+    # Create Dir
     if checkpoint_dir is None and load_checkpoint_dir is None:
         log_dist(
             "Need to specify one of checkpoint_dir"
