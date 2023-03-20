@@ -750,9 +750,8 @@ def train(
                                           model_parameters=model.parameters(),
                                           config=ds_config)
     log_dist("DeepSpeed engine created", ranks=[0], level=logging.INFO)
-    ################################
-    #### Load Model checkpoint #####
-    ################################
+    
+    # Load Model Checkpoint
     start_step = 1
     if load_checkpoint_dir is not None:
         _, client_state = model.load_checkpoint(load_dir=load_checkpoint_dir)
