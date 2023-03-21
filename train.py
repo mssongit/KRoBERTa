@@ -715,9 +715,8 @@ def train(
         dropout=dropout,
     )
     log_dist("Model Creation Done", ranks=[0], level=logging.INFO)
-    ################################
-    ###### DeepSpeed engine ########
-    ################################
+    
+    # DeepSpeed engine Related Config
     log_dist("Creating DeepSpeed engine", ranks=[0], level=logging.INFO)
     ds_config = {
         "train_micro_batch_size_per_gpu": batch_size,
