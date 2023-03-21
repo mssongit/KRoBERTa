@@ -487,11 +487,7 @@ def create_experiment_dir(checkpoint_dir: pathlib.Path,
     return exp_dir
 
 
-######################################################################
-################ Checkpoint Related Functions ########################
-######################################################################
-
-
+# Checkpoint Related Functions
 def load_model_checkpoint(
     load_checkpoint_dir: pathlib.Path,
     model: torch.nn.Module,
@@ -544,11 +540,7 @@ def load_model_checkpoint(
     return checkpoint_step, model, optimizer
 
 
-######################################################################
-######################## Driver Functions ############################
-######################################################################
-
-
+# Train Driver Setting
 def train(
         checkpoint_dir: str = None,
         load_checkpoint_dir: str = None,
