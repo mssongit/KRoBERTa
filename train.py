@@ -792,6 +792,6 @@ def train(
 
 if __name__ == "__main__":
     torch.manual_seed(42)
-    np.random.seed(0)
-    random.seed(0)
+    np.random.seed(42)
+    random.seed(42)
     fire.Fire(train)
