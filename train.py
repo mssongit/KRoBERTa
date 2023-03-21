@@ -354,8 +354,7 @@ class RobertaMLMModel(RobertaPreTrainedModel):
         return masked_lm_loss
 
 
-def create_model(num_layers: int, num_heads: int, ff_dim: int, h_dim: int,
-                 dropout: float) -> RobertaMLMModel:
+def create_model(num_layers: int, num_heads: int, ff_dim: int, h_dim: int, dropout: float) -> RobertaMLMModel:
     """Create a Bert model with the specified `num_heads`, `ff_dim`,
     `h_dim` and `dropout`
     Args:
