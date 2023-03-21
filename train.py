@@ -747,9 +747,7 @@ def train(
         checkpoint_step = client_state['checkpoint_step']
         start_step = checkpoint_step + 1
 
-    ################################
-    ####### The Training Loop ######
-    ################################
+    # Model Train
     log_dist(
         f"Total number of model parameters: {sum([p.numel() for p in model.parameters()]):,d}",
         ranks=[0],
