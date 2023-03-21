@@ -703,9 +703,8 @@ def train(
         batch_size=batch_size,
     )
     log_dist("Dataset Creation Done", ranks=[0], level=logging.INFO)
-    ################################
-    ###### Create Model ############
-    ################################
+    
+    # Create Model
     log_dist("Creating Model", ranks=[0], level=logging.INFO)
     model = create_model(
         num_layers=num_layers,
