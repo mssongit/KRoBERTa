@@ -47,8 +47,6 @@ def log_dist(message: str,
         if level == logging.DEBUG:
             logger.debug(f'[Rank {my_rank}] {message}')
 
-
-
 TokenizerType = Union[PreTrainedTokenizer, PreTrainedTokenizerFast]
 
 def collate_function(batch: List[Tuple[List[int], List[int]]],
