@@ -168,8 +168,7 @@ class WikiTextMLMDataset(Dataset):
     """A [Map style dataset](https://pytorch.org/docs/stable/data.html)
     for iterating over the wikitext dataset. Note that this assumes
     the dataset can fit in memory. For larger datasets
-    you'd want to shard them and use an iterable dataset (eg: see
-    [Infinibatch](https://github.com/microsoft/infinibatch))
+    you'd want to shard them and use an iterable dataset (eg: see [Infinibatch](https://github.com/microsoft/infinibatch))
     Args:
         Dataset (datasets.arrow_dataset.Dataset):
             The wikitext dataset
