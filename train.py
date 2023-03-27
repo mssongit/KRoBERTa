@@ -163,7 +163,7 @@ def masking_function(
     return tokenized_ids.tolist(), labels.tolist()
 
 
-
+# Change
 class WikiTextMLMDataset(Dataset):
     """A [Map style dataset](https://pytorch.org/docs/stable/data.html)
     for iterating over the wikitext dataset. Note that this assumes
