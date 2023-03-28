@@ -192,7 +192,6 @@ class WikiTextMLMDataset(Dataset):
         tokens, labels = self.masking_function(self.dataset[idx]["text"])
         return (tokens, labels)
 
-
 T = TypeVar("T")
 
 
