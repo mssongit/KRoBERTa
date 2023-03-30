@@ -212,6 +212,7 @@ class InfiniteIterator(object):
         return next_item
 
 
+# ToDo
 def create_data_iterator(
         mask_prob: float,
         random_replace_prob: float,
