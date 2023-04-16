@@ -163,7 +163,7 @@ def masking_function(
     return tokenized_ids.tolist(), labels.tolist()
 
 
-# Change
+# Repository Change
 class WikiTextMLMDataset(Dataset):
     """A [Map style dataset](https://pytorch.org/docs/stable/data.html)
     the dataset can fit in memory. For larger datasets
@@ -212,7 +212,7 @@ class InfiniteIterator(object):
         return next_item
 
 
-# ToDo
+# Change Dataset
 def create_data_iterator(
         mask_prob: float,
         random_replace_prob: float,
