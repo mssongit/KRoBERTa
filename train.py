@@ -82,8 +82,7 @@ def masking_function(
         unmask_replace_prob: float,
         max_length: int,
 ) -> Tuple[List[int], List[int]]:
-    """Given a text string, randomly mask wordpieces for Bert MLM
-    training.
+    """Given a text string, randomly mask wordpieces for Bert MLM training.
     Args:
         text (str):
             The input text
