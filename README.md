@@ -5,6 +5,8 @@
 
 Huggingface Model Download
 
+https://huggingface.co/mssongit/KRoBERTa-base/tree/main
+
 ## How to use
 
 ### Requirements
