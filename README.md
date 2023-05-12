@@ -22,3 +22,8 @@ from transformers import AutoTokenizer, AutoModel
 tokenizer = AutoTokenizer.from_pretrained("mssongit/KRoBERTa-base")
 
 model = AutoModel.from_pretrained("mssongit/KRoBERTa-base")
+
+
+## Tokenizer Train
+
+BBPE Tokenizer, Vocab size = 72000
