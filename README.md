@@ -17,7 +17,7 @@ Huggingface Model Download
 ```python
 from transformers import AutoTokenizer, AutoModel
 
-# Base Model (108M)
+# Base Model
 
 tokenizer = AutoTokenizer.from_pretrained("mssongit/KRoBERTa-base")
 
