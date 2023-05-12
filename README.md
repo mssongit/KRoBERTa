@@ -9,10 +9,13 @@ Huggingface Model Download
 
 ### Requirements
 
-- `pytorch <= 1.8.0`
-- `transformers >= 3.0.1`
-- `emoji ~= 0.6.0`
-- `soynlp ~= 0.0.493`
+- `pytorch`
+- `transformers >= 4.5.1`
+- `loguru ~=0.5.3
+- `tqdm ~=4.62.3
+- 'datasets >= 1.13.3'
+
+
 
 ```python
 from transformers import AutoTokenizer, AutoModel
