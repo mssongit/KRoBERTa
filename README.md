@@ -37,3 +37,5 @@ BBPE Tokenizer, Vocab size = 72000
 ## Base Model Loss
 
 ![image](https://github.com/mssongit/KRoBERTa/assets/95903180/9edac05f-7b8a-4fed-8acb-3ccd99ff6c78)
+
+## Evaluation
