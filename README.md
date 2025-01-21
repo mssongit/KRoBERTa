@@ -31,7 +31,7 @@ model = AutoModel.from_pretrained("mssongit/KRoBERTa-base")
 
 ## Tokenizer Train
 
-BBPE Tokenizer, Vocab size = 72000
+BBPE Tokenizer, Vocab size = 128000
 
 
 ## Base Model Loss
